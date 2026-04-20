@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health AI Platform</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        h1 { color: #2c3e50; }
+        p { color: #34495e; }
+    </style>
+</head>
+<body>
+    <h1>AI-платформа здоровья</h1>
+    <p>Добро пожаловать. Фронтенд работает.</p>
+    <button onclick="fetch('/api/health')">Проверить API</button>
+    <pre id="output"></pre>
+    <script>
+        document.querySelector('button').onclick = async () => {
+            const res = await fetch('/api/health');
+            const data = await res.json();
+            document.getElementById('output').innerText = JSON.stringify(data, null, 2);
+        };
+    </script>
+</body>
+</html>
