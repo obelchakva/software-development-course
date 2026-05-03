@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# Локальные файлы окружения и IDE
+.env
+.env.local
+.vscode
+.idea
+
+# Логи и временные файлы
+logs
+*.log
+tmp
+.DS_Store
+
+# Зависимости и кэш сборки для Python
+__pycache__
+*.pyc
+.pytest_cache
+.mypy_cache
+
+# Папки с зависимостями для разработки
+node_modules
+
+# Документация и тесты
+README.md
+tests
+docs
+
+# Docker-специфичные файлы
+docker-compose*.yml
+.dockerignore
